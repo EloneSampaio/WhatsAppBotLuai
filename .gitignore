@@ -1,0 +1,11 @@
+node_modules
+build
+npm-debug.log
+.nyc
+.env
+.DS_Store
+.wwebjs_auth
+tokens
+index back.js
+index2.js
+indexwconectback.js

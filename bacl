@@ -1,0 +1,41 @@
+const { Client, LocalAuth, Buttons, List } = require("whatsapp-web.js");
+const qrcode = require("qrcode-terminal");
+
+
+const client = new Client({
+    authStrategy: new LocalAuth(),
+  });
+   
+client.on('qr', qr => {
+    qrcode.generate(qr, {small: true});
+});
+
+client.on('ready', () => {
+    console.log('WhatsApp já está conectado!');
+});
+
+client.initialize();
+
+var nome='xvx99*';
+client.on('message', message => {
+
+    if(message.body === 'Facebook') {
+		client.sendMessage(message.from,'Olá, aqui é o SamBot, assistente virtual da XPTO.');
+        client.sendMessage(message.from,'Bem vindo(a) A Luaitech é um prazer recebê-lo aqui \n Meu nome é Feliciano Cazale e terei muito gosto em ajudá-lo \n Antes de começarmos é preciso saber algumas informações.')
+        client.sendMessage(message.from,'Qual é o seu nome, por favor?');
+        nome = message.body
+        client.sendMessage(message.from,'Prazer, .'+ nome);
+
+    if(message.body !==null &&  message.body!=='Tenho interesse em conhecer o XPTO!' && nome==='xvx99*') {
+		nome = message.body
+        console.log(nome);
+        client.sendMessage(message.from,'Seja bem-vindo ao serviço XPTO'+nome);
+        client.sendMessage(message.from,'Abaixo estão listados os serviços que prestamos');
+        client.sendMessage(message.from,'1- X1 \n 2- X2 \n 2- X3 \n');
+     	}
+    }
+
+
+});
+
+

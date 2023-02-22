@@ -1,0 +1,13 @@
+{
+    "menu": [
+      "aplicativo móvel\n",
+      "Sites e Loja",
+      "Formação"
+    ],
+    "cadastro": [
+      "Qual é o seu nome, por favor? \n",
+      "Prazer, ",
+      "Abaixo estão listados os serviços que prestamos.",
+      "Digite o número do serviço que precisa por favor"
+    ]
+  }
