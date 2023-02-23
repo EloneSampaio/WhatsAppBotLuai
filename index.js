@@ -4,7 +4,7 @@ var QRCode = require('qrcode')
 require('dotenv').config()
 
 
-
+//Moi c'est Sam
 
 let option;
 let exec =true;
