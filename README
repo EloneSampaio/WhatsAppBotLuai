@@ -1,4 +1,29 @@
 https://docs.wwebjs.dev
 
+https://medium.com/como-programar-em-1-dia/como-fazer-um-rob%C3%B4-de-whatsapp-chatbot-em-1-dia-644ee98054d7
+heroku git:remote -a
 
-heroku git:remote -a 
+
+ERROR 
+
+https://github.com/pedroslopez/whatsapp-web.js/issues/1985
+
+
+Bug Cannot read properties of undefined (reading 'queryExists') #1985
+
+
+
+      Object.keys(menu).map((value) => {
+        const element = menu[value];
+        if (value === '1') {
+          msg += `1️⃣ - _${element.description}_ \n`;
+        } else if (value === '2') {
+          msg += `2️⃣ - _${element.description}_ \n`;
+        } else if (value === '3') {
+          msg += `3️⃣ - _${element.description}_ \n`;
+        } else if (value === '4') {
+          msg += `4️⃣ - _${element.description}_ \n`;
+        } else if (value === '5') {
+          msg += `5️⃣ - _${element.description}_ \n`;
+        }
+      });

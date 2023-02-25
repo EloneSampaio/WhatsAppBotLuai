@@ -106,7 +106,7 @@ async function menu(client,number){
 
 async function welcome(client){
 
- client.onMessage(async (message) => {
+client.onMessage(async (message) => {
 
     if(message.body === process.env.TRIGGER_1) {
 	await	client.sendText(message.from,process.env.WELCOME);
